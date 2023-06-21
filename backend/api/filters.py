@@ -39,7 +39,7 @@ class RecipesFilter(filters.FilterSet):
             return queryset
 
 
-class IngredientSearchFilter(SearchFilter):
+class IngredientFilter(SearchFilter):
     """
     Кастомный фильтр для поиска по ингредиентам.
     """
