@@ -7,10 +7,10 @@ from recipes.models import (Favorite, Ingredient, IngredientInRecipe, Recipe,
 from users.models import Subscribe, User
 from .validators import (validate_cooking_time, validate_ingredients,
                          validate_tags)
-from recipes.serializers import RecipeToRepresentationSerializer
+from recipes.serializers import RecipeSerializer
 
 
-class RecipeToRepresentationSerializer(serializers.ModelSerializer):
+class RecipeSerializer(serializers.ModelSerializer):
     """ отображения модели Recipe  """
     class Meta:
         model = Recipe
